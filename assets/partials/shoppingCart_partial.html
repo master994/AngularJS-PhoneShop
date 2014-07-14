@@ -1,0 +1,9 @@
+﻿<h1>Shopping List</h1>
+
+    <div class="list-group">
+        <div ng-repeat="item in cart" class="list-group-item well">
+            <span>{{item.name}}</span>
+            {{item.count}}
+            <input type="checkbox" ng-model="item.checked" ng-click="checkedIndex(item)">
+        </div>
+    </div>
